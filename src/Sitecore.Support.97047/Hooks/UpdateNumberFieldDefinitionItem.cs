@@ -30,7 +30,7 @@
                     return;
                 }
 
-                Log.Info("Installing Sitecore.Support.97047", this);
+                Log.Info(string.Format("Installing {0}", assemblyName), this);
 
                 item.Editing.BeginEdit();
                 item[fieldName] = fieldValue;
