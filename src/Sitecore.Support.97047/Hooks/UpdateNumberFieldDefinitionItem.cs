@@ -20,7 +20,7 @@
 
                 var typeName = type.FullName;
                 var assemblyName = type.Assembly.GetName().Name;
-                var fieldValue = "Sitecore.Support.Data.Validators.FieldValidators.RequiredFieldValidator, Sitecore.Support.97047";
+                var fieldValue = string.Format("{0}, {1}", typeName, assemblyName);
 
                 var database = Factory.GetDatabase(databaseName);
                 var item = database.GetItem(itemPath);
